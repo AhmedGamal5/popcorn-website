@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# 🎬 Popcorn-website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+Popcorn -Website is a React-based movie watchlist application that allows users to search for movies, view detailed information about them, and manage a personal list of movies they have watched. The application integrates with the OMDb API to fetch movie data and provides a seamless user experience with various interactive components. It leverages custom hooks for fetching data and storing user preferences locally, ensuring a smooth and dynamic user interface.
 
-## Available Scripts
+## Features
+🌟 Search and Browse Movies
+Search Functionality: Users can search for movies by typing in keywords in the search bar.
+The app fetches movie data from the OMDb API based on the user's query and displays the results.
+Movie List: 
+The app displays a list of movies matching the search query. 
+Users can click on any movie to view more details.
 
-In the project directory, you can run:
+## 🎥 Movie Details
+Detailed Information: Upon selecting a movie, users can view detailed information, including the title, release year, runtime, genre, director, cast, and IMDb rating.
+Add to Watchlist: Users can add movies to their watchlist to store the movie's information locally on their device.
 
-### `npm start`
+## 🎦 Watched Movies Management
+Watched List: The app maintains a list of movies that the user has marked as watched. This list is stored in the browser's local storage, so it persists across sessions.
+User Ratings: Users can rate the movies they have watched. The app records these ratings and displays them alongside the IMDb ratings.
+Summary Statistics: The app provides summary statistics about the watched movies, including the average IMDb rating, user rating, and total runtime.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠 Custom Hooks
+useMovies Hook: A custom hook for fetching movie data from the OMDb API based on the user's search query.
+useLocalStorage Hook: A custom hook for persisting data in the browser's local storage. This is used to store the user's watched movies list.
+## Technologies Used
+React: The core framework for building the user interface.
+OMDb API: For fetching movie data based on search queries and movie selections.
+Custom Hooks: useMovies for data fetching and useLocalStorage for local storage management.
+CSS: For styling the application, ensuring a clean and modern user interface.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How to Run the Project
+1- Clone the Repository:
+git clone https://github.com/your-username/project-name
+cd project-name
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2- Install Dependencies:
+npm install
 
-### `npm run build`
+3- Run the Application:
+npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Future Improvements
+User Authentication: Implement user authentication to allow users to save their watchlist across different devices.
+Enhanced Search Filters: Add filters for genre, year, and ratings to refine search results.
+Movie Recommendations: Integrate a recommendation system based on watched movies and user ratings.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Conclusion
+Popcorn -Website is a feature-rich movie watchlist application that demonstrates the power of React and custom hooks for creating interactive and responsive web applications. Whether you're a movie enthusiast or just looking for a project to manage your favorite films, usePopcorn provides a comprehensive solution.
